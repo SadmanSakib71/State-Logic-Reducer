@@ -1,15 +1,12 @@
-const TaskList = () => {
+import Task from "./Task";
+
+const TaskList = ({ tasks }) => {
   return (
     <>
       <ul>
-        <li>
-          <label>
-            <input type="checkbox" />
-            <input />
-            <button>Save</button>
-            <button>Delete</button>
-          </label>
-        </li>
+        {tasks.map((task) => (
+          <Task key={task.id} task={task} />
+        ))}
       </ul>
     </>
   );
