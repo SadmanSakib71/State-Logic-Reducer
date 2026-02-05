@@ -31,7 +31,11 @@ const App = () => {
     <>
       <h1>Sadman Sakib itinerary</h1>
       <AddTask onAdd={handleAddTask} />
-      <TaskList tasks={tasks} />
+      <TaskList
+        tasks={tasks}
+        onChangeTask={handleChangeTask}
+        onDeleteTask={handleDeleteTask}
+      />
     </>
   );
 };
