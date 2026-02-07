@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const AddTask = ({ onAdd }) => {
-  const [text, setText] = useState();
+  const [text, setText] = useState("");
 
   const handleTextChange = (e) => {
     setText(e.target.value);
